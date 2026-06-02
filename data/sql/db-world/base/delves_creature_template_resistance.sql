@@ -1,3 +1,6 @@
+DELETE FROM `creature_template_resistance` 
+WHERE `CreatureID` IN (600600,600601,600602,600603,600604,600605,600606,600607,600608,600609,600610,600615,600671,600672);
+
 INSERT INTO creature_template_resistance (CreatureID,School,Resistance,VerifiedBuild) VALUES
 	 (600600,6,100,12340),
 	 (600601,6,100,12340),
