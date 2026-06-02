@@ -15,18 +15,20 @@
 -- ======================================================
 -- CREATURE TEMPLATE (Custom NPCs Only)
 -- ======================================================
+DELETE FROM `creature_template` WHERE entry IN (888432, 9500637, 9500639, 9500643, 9500644);
 
-INSERT INTO `creature_template` (`entry`,`difficulty_entry_1`,`difficulty_entry_2`,`difficulty_entry_3`,`KillCredit1`,`KillCredit2`,`name`,`subname`,`IconName`,`gossip_menu_id`,`minlevel`,`maxlevel`,`exp`,`faction`,`npcflag`,`speed_walk`,`speed_run`,`speed_swim`,`speed_flight`,`detection_range`,`scale`,`rank`,`dmgschool`,`DamageModifier`,`BaseAttackTime`,`RangeAttackTime`,`BaseVariance`,`RangeVariance`,`unit_class`,`unit_flags`,`unit_flags2`,`dynamicflags`,`family`,`trainer_type`,`trainer_spell`,`trainer_class`,`trainer_race`,`type`,`type_flags`,`lootid`,`pickpocketloot`,`skinloot`,`PetSpellDataId`,`VehicleId`,`mingold`,`maxgold`,`AIName`,`MovementType`,`HoverHeight`,`HealthModifier`,`ManaModifier`,`ArmorModifier`,`ExperienceModifier`,`RacialLeader`,`movementId`,`RegenHealth`,`mechanic_immune_mask`,`spell_school_immune_mask`,`flags_extra`,`ScriptName`,`VerifiedBuild`) VALUES
-	 (888432,0,0,0,0,0,'Narul the Flameseeker','Delve Boss',NULL,0,80,80,0,148,0,3.5,2,1,14,18,3,3,0,45.7,2192,0,1,1,2,0,2048,0,0,0,0,0,0,7,0,11502,0,0,0,0,3,24,'',1,1,115,127,1,1,0,0,1,100810591,0,0,'',12340),
-	 (9500637,0,0,0,0,0,'Boba Fett','Bounty Hunter',NULL,0,85,85,0,168,0,1.5,1.5,1,1,20,1.5,3,0,35,1000,2000,1,1,2,0,0,1,0,0,0,0,0,1,68,33271,0,0,0,0,0,0,'',1,1,110,50,1,1,0,0,1,650854399,0,1073741824,'',0),
-	 (9500639,0,0,0,0,0,'Kylo Ren','Sith',NULL,0,85,85,0,14,0,1.5,1.5,1,1,20,1.71,3,0,17.58,1200,2000,1,1,2,0,0,1,0,0,0,0,0,1,64,35451,0,0,0,0,0,0,'',1,1,115,20,1,1,0,0,1,650854399,0,1073741824,'',0),
-	 (9500643,29347,0,0,0,0,'Stormtrooper','Empire',NULL,0,81,81,0,54,0,1.2,1.42857,1,1,20,1.3,1,0,11.5,1000,1000,1,1,1,64,2048,0,0,0,0,0,0,7,72,100003,0,0,0,0,94,357,'SmartAI',1,1,15,2,1,1,0,0,1,1019952978,0,0,'',12340),
-	 (9500644,0,0,0,0,0,'Darth Vader','Empire',NULL,0,85,85,0,168,0,2,1.71429,1,1,20,1.9,3,0,35,2500,2000,1,1,2,0,0,1,0,0,0,0,0,7,64,16028,0,0,0,0,0,0,'',1,1,310,50,1,1,0,0,1,650854399,0,1073741824,'',0);
+INSERT INTO `creature_template` (`entry`, `difficulty_entry_1`, `difficulty_entry_2`, `difficulty_entry_3`, `KillCredit1`, `KillCredit2`, `name`, `subname`, `IconName`, `gossip_menu_id`, `minlevel`, `maxlevel`, `exp`, `faction`, `npcflag`, `speed_walk`, `speed_run`, `speed_swim`, `speed_flight`, `detection_range`, `rank`, `dmgschool`, `DamageModifier`, `BaseAttackTime`, `RangeAttackTime`, `BaseVariance`, `RangeVariance`, `unit_class`, `unit_flags`, `unit_flags2`, `dynamicflags`, `family`, `type`, `type_flags`, `lootid`, `pickpocketloot`, `skinloot`, `PetSpellDataId`, `VehicleId`, `mingold`, `maxgold`, `AIName`, `MovementType`, `HoverHeight`, `HealthModifier`, `ManaModifier`, `ArmorModifier`, `ExperienceModifier`, `RacialLeader`, `movementId`, `RegenHealth`, `flags_extra`, `ScriptName`, `VerifiedBuild`) VALUES
+    (888432, 0, 0, 0, 0, 0, 'Narul the Flameseeker', 'Delve Boss', NULL, 0, 80, 80, 0, 148, 0, 3.5, 2, 1, 14, 18, 3, 0, 45.7, 2192, 0, 1, 1, 2, 0, 2048, 0, 0, 7, 0, 11502, 0, 0, 0, 0, 3, 24, '', 1, 1, 115, 127, 1, 1, 0, 0, 1, 0, '', 12340),
+    (9500637, 0, 0, 0, 0, 0, 'Boba Fett', 'Bounty Hunter', NULL, 0, 85, 85, 0, 168, 0, 1.5, 1.5, 1, 1, 20, 3, 0, 35, 1000, 2000, 1, 1, 2, 0, 0, 1, 0, 1, 68, 33271, 0, 0, 0, 0, 0, 0, '', 1, 1, 110, 50, 1, 1, 0, 0, 1, 1073741824, '', 0),
+    (9500639, 0, 0, 0, 0, 0, 'Kylo Ren', 'Sith', NULL, 0, 85, 85, 0, 14, 0, 1.5, 1.5, 1, 1, 20, 3, 0, 17.58, 1200, 2000, 1, 1, 2, 0, 0, 1, 0, 1, 64, 35451, 0, 0, 0, 0, 0, 0, '', 1, 1, 115, 20, 1, 1, 0, 0, 1, 1073741824, '', 0),
+    (9500643, 29347, 0, 0, 0, 0, 'Stormtrooper', 'Empire', NULL, 0, 81, 81, 0, 54, 0, 1.2, 1.42857, 1, 1, 20, 1, 0, 11.5, 1000, 1000, 1, 1, 1, 64, 2048, 0, 0, 7, 72, 100003, 0, 0, 0, 0, 94, 357, 'SmartAI', 1, 1, 15, 2, 1, 1, 0, 0, 1, 0, '', 12340),
+    (9500644, 0, 0, 0, 0, 0, 'Darth Vader', 'Empire', NULL, 0, 85, 85, 0, 168, 0, 2, 1.71429, 1, 1, 20, 3, 0, 35, 2500, 2000, 1, 1, 2, 0, 0, 1, 0, 7, 64, 16028, 0, 0, 0, 0, 0, 0, '', 1, 1, 310, 50, 1, 1, 0, 0, 1, 1073741824, '', 0);
+
 
 -- ======================================================
 -- CREATURE TEMPLATE MODEL
 -- ======================================================
-
+DELETE FROM `creature_template_model` WHERE entry IN (9500639, 9500643, 9500644);
 INSERT INTO `creature_template_model` (`CreatureID`,`Idx`,`CreatureDisplayID`,`DisplayScale`,`Probability`,`VerifiedBuild`) VALUES
 	 (9500639,0,34079,1.7,1,0),
 	 (9500643,0,34082,1.3,1,12340),
@@ -35,7 +37,7 @@ INSERT INTO `creature_template_model` (`CreatureID`,`Idx`,`CreatureDisplayID`,`D
 -- ======================================================
 -- CREATURE EQUIP TEMPLATE
 -- ======================================================
-
+DELETE FROM `creature_equip_template` WHERE entry IN (9500639, 9500643, 9500644);
 INSERT INTO `creature_equip_template` (`CreatureID`,`ID`,`ItemID1`,`ItemID2`,`ItemID3`,`VerifiedBuild`) VALUES
 	 (9500639,1,1728,0,0,0),
 	 (9500643,1,45972,0,28286,0),
@@ -45,6 +47,7 @@ INSERT INTO `creature_equip_template` (`CreatureID`,`ID`,`ItemID1`,`ItemID2`,`It
 -- CREATURE TEMPLATE RESISTANCE
 -- ======================================================
 
+DELETE FROM `creature_template_resistance` WHERE entry IN (888432, 9500643);
 INSERT INTO `creature_template_resistance` (`CreatureID`,`School`,`Resistance`,`VerifiedBuild`) VALUES
 	 (888432,2,50,0),
 	 (9500643,6,100,12340);
@@ -54,6 +57,7 @@ INSERT INTO `creature_template_resistance` (`CreatureID`,`School`,`Resistance`,`
 -- ======================================================
 
 -- Narul the Flameseeker (888432)
+DELETE FROM `creature_loot_template` WHERE entry IN (888432,11502,7078,17204,19017,20951,21110,30171,30484,30485,30547,30549,30550);
 INSERT INTO `creature_loot_template` (`Entry`,`Item`,`Reference`,`Chance`,`QuestRequired`,`LootMode`,`GroupId`,`MinCount`,`MaxCount`,`Comment`) VALUES
 	 (11502,7078,0,40,0,1,0,1,9,'Narul - Essence of Fire'),
 	 (11502,17204,0,3,0,1,0,1,1,'Narul - Eye of Sulfuras'),
@@ -68,18 +72,21 @@ INSERT INTO `creature_loot_template` (`Entry`,`Item`,`Reference`,`Chance`,`Quest
 	 (11502,30550,30550,100,0,1,0,1,1,'Narul - (ReferenceTable) Trinkets');
 
 -- Darth Vader (9500644)
+DELETE FROM `creature_loot_template` WHERE entry IN (16028,16028,16028);
 INSERT INTO `creature_loot_template` (`Entry`,`Item`,`Reference`,`Chance`,`QuestRequired`,`LootMode`,`GroupId`,`MinCount`,`MaxCount`,`Comment`) VALUES
 	 (16028,1,34100,100,0,1,0,2,2,'Darth Vader - (ReferenceTable) Naxx 10'),
 	 (16028,45912,0,0.1,0,1,0,1,1,'Darth Vader - Book of Glyph Mastery'),
 	 (16028,47241,0,100,0,1,0,1,1,'Darth Vader - Emblem of Triumph');
 
 -- Kylo Ren (9500639)
+DELETE FROM `creature_loot_template` WHERE entry IN (35451);
 INSERT INTO `creature_loot_template` (`Entry`,`Item`,`Reference`,`Chance`,`QuestRequired`,`LootMode`,`GroupId`,`MinCount`,`MaxCount`,`Comment`) VALUES
 	 (35451,1,34170,100,0,1,0,2,2,'Kylo Ren - (ReferenceTable) TOC 10'),
 	 (35451,43228,0,100,0,1,0,3,3,'Kylo Ren - Stone Keepers Shard'),
 	 (35451,45912,0,0.1,0,1,0,1,1,'Kylo Ren - Book of Glyph Mastery');
 
 -- Stormtrooper (9500643)
+DELETE FROM `creature_loot_template` WHERE entry IN (100003);
 INSERT INTO `creature_loot_template` (`Entry`,`Item`,`Reference`,`Chance`,`QuestRequired`,`LootMode`,`GroupId`,`MinCount`,`MaxCount`,`Comment`) VALUES
 	 (100003,1,35083,100,0,1,0,1,1,'Stormtrooper - (ReferenceTable) Naxx Trash');
 

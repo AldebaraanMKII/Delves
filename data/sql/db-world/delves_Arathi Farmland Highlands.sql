@@ -1,4 +1,8 @@
-INSERT INTO creature_template (entry,difficulty_entry_1,difficulty_entry_2,difficulty_entry_3,KillCredit1,KillCredit2,name,subname,IconName,gossip_menu_id,minlevel,maxlevel,`exp`,faction,npcflag,speed_walk,speed_run,speed_swim,speed_flight,detection_range,`scale`,`rank`,dmgschool,DamageModifier,BaseAttackTime,RangeAttackTime,BaseVariance,RangeVariance,unit_class,unit_flags,unit_flags2,dynamicflags,family,trainer_type,trainer_spell,trainer_class,trainer_race,`type`,type_flags,lootid,pickpocketloot,skinloot,PetSpellDataId,VehicleId,mingold,maxgold,AIName,MovementType,HoverHeight,HealthModifier,ManaModifier,ArmorModifier,ExperienceModifier,RacialLeader,movementId,RegenHealth,mechanic_immune_mask,spell_school_immune_mask,flags_extra,ScriptName,VerifiedBuild) VALUES
+
+
+DELETE FROM `creature_template` WHERE `entry` IN (600689, 600690, 600691, 600692, 600693, 600695, 600696, 600697, 600698, 600699, 600700);
+
+INSERT INTO `creature_template` (entry,difficulty_entry_1,difficulty_entry_2,difficulty_entry_3,KillCredit1,KillCredit2,name,subname,IconName,gossip_menu_id,minlevel,maxlevel,`exp`,faction,npcflag,speed_walk,speed_run,speed_swim,speed_flight,detection_range,`scale`,`rank`,dmgschool,DamageModifier,BaseAttackTime,RangeAttackTime,BaseVariance,RangeVariance,unit_class,unit_flags,unit_flags2,dynamicflags,family,trainer_type,trainer_spell,trainer_class,trainer_race,`type`,type_flags,lootid,pickpocketloot,skinloot,PetSpellDataId,VehicleId,mingold,maxgold,AIName,MovementType,HoverHeight,HealthModifier,ManaModifier,ArmorModifier,ExperienceModifier,RacialLeader,movementId,RegenHealth,mechanic_immune_mask,spell_school_immune_mask,flags_extra,ScriptName,VerifiedBuild) VALUES
 	 (600689,0,0,0,35297,0,'Scourge Adept','Delve','',0,83,83,2,168,0,1.0,1.14286,1.0,1.0,20.0,1.0,1,0,1.0,2000,2000,1.0,1.0,8,32768,2048,0,0,0,0,0,0,7,0,600689,0,0,0,0,1667,2779,'SmartAI',0,1.0,1.0,1.0,1.0,1.0,0,0,1,0,0,0,'',12340),
 	 (600690,0,0,0,0,0,'Scourge Necromancer','Delve',NULL,0,83,83,0,168,0,1.0,1.14286,1.0,1.0,20.0,1.0,1,0,22.0,2000,2000,1.0,1.0,8,32768,2048,0,0,0,0,0,0,7,0,600690,600690,0,0,0,100,136,'SmartAI',0,1.0,32.4,30.0,1.0,1.0,0,0,1,0,0,0,'',12340),
 	 (600691,0,0,0,25660,0,'Scourge Plaguebringer','Delve','',0,84,84,2,168,0,1.0,1.14857,1.0,1.0,20.0,1.0,1,0,32.0,2000,2000,1.0,1.0,8,32768,2048,0,0,0,0,0,0,7,0,600691,0,0,0,0,1049,1749,'SmartAI',0,1.0,32.67,30.0,1.0,1.0,0,0,1,0,0,0,'',12340),
@@ -13,12 +17,15 @@ INSERT INTO creature_template (entry,difficulty_entry_1,difficulty_entry_2,diffi
 	 (600700,0,0,0,0,0,'Savathûn, The Redeemer','Delve Boss','',0,85,85,2,168,0,1.44444,1.5873,1.0,1.0,20.0,4.0,3,0,36.0,1950,2000,1.0,1.0,1,0,2048,0,0,0,0,0,0,2,4,600700,0,70202,0,0,0,0,'',0,3.0,100.0,5.0,1.0,1.0,0,0,1,40583007,0,0,'',12340);
 
 
+DELETE FROM `creature_template_addon` WHERE `entry` IN (600693);
 
-INSERT INTO creature_template_addon (entry,path_id,mount,bytes1,bytes2,emote,visibilityDistanceType,auras) VALUES
+INSERT INTO `creature_template_addon` (entry,path_id,mount,bytes1,bytes2,emote,visibilityDistanceType,auras) VALUES
 	 (600693,0,0,0,1,0,3,'19818');
 
 
-INSERT INTO creature_template_model (CreatureID,Idx,CreatureDisplayID,DisplayScale,Probability,VerifiedBuild) VALUES
+
+DELETE FROM `creature_template_model` WHERE `entry` IN (600689, 600690, 600691, 600692, 600693, 600695, 600696, 600697, 600698, 600699, 600700);
+INSERT INTO `creature_template_model` (CreatureID,Idx,CreatureDisplayID,DisplayScale,Probability,VerifiedBuild) VALUES
 	 (600689,0,24584,1.0,1.0,12340),
 	 (600689,1,24582,1.0,1.0,12340),
 	 (600690,0,10427,1.0,1.0,12340),
@@ -44,7 +51,8 @@ INSERT INTO creature_template_model (CreatureID,Idx,CreatureDisplayID,DisplaySca
 	 (600700,0,27710,4.0,1.0,12340);
 
 
-INSERT INTO creature_template_spell (CreatureID,`Index`,Spell,VerifiedBuild) VALUES
+DELETE FROM `creature_template_spell` WHERE `entry` IN (600689, 600690, 600691, 600692, 600693, 600695, 600696, 600697, 600698, 600699, 600700);
+INSERT INTO `creature_template_spell` (CreatureID,`Index`,Spell,VerifiedBuild) VALUES
 	 (600689,0,58847,0),
 	 (600689,1,60646,0),
 	 (600689,2,17238,0),
@@ -73,18 +81,22 @@ INSERT INTO creature_template_spell (CreatureID,`Index`,Spell,VerifiedBuild) VAL
 	 (600700,3,60667,0);
 
 
-INSERT INTO creature_onkill_reputation (creature_id,RewOnKillRepFaction1,RewOnKillRepFaction2,MaxStanding1,IsTeamAward1,RewOnKillRepValue1,MaxStanding2,IsTeamAward2,RewOnKillRepValue2,TeamDependent) VALUES
+DELETE FROM `creature_onkill_reputation` WHERE `entry` IN (600690, 600692, 600694);
+
+INSERT INTO `creature_onkill_reputation` (creature_id,RewOnKillRepFaction1,RewOnKillRepFaction2,MaxStanding1,IsTeamAward1,RewOnKillRepValue1,MaxStanding2,IsTeamAward2,RewOnKillRepValue2,TeamDependent) VALUES
 	 (600690,529,0,5,0,10.0,0,0,0.0,0),
 	 (600692,529,0,7,0,30.0,0,0,0.0,0),
 	 (600694,1156,0,7,0,15.0,0,0,0.0,0);
 
 
-INSERT INTO creature_equip_template (CreatureID,ID,ItemID1,ItemID2,ItemID3,VerifiedBuild) VALUES
+DELETE FROM `creature_equip_template` WHERE `entry` IN (600690, 600691);
+INSERT INTO `creature_equip_template` (CreatureID,ID,ItemID1,ItemID2,ItemID3,VerifiedBuild) VALUES
 	 (600690,1,2559,0,0,18019),
 	 (600691,1,13698,0,0,18019);
 
 
-INSERT INTO creature_loot_template (Entry,Item,Reference,Chance,QuestRequired,LootMode,GroupId,MinCount,MaxCount,Comment) VALUES
+DELETE FROM `creature_loot_template` WHERE `entry` IN (600689, 600690, 600691, 600692, 600693, 600695, 600696, 600697, 600698, 600699, 600700);
+INSERT INTO `creature_loot_template` (Entry,Item,Reference,Chance,QuestRequired,LootMode,GroupId,MinCount,MaxCount,Comment) VALUES
 	 (600689,24727,24727,1.5,0,1,0,1,1,'Shadow Adept - (ReferenceTable)'),
 	 (600689,26001,26001,3.0,0,1,1,1,1,'Shadow Adept - (ReferenceTable)'),
 	 (600689,26002,26002,3.0,0,1,1,1,1,'Shadow Adept - (ReferenceTable)'),
@@ -491,14 +503,29 @@ INSERT INTO creature_loot_template (Entry,Item,Reference,Chance,QuestRequired,Lo
 	 (600700,43949,0,100.0,0,1,0,1,2,'Delve Token');
 
 
-
-INSERT INTO skinning_loot_template (Entry,Item,Reference,Chance,QuestRequired,LootMode,GroupId,MinCount,MaxCount,Comment) VALUES
+DELETE FROM `skinning_loot_template` WHERE `entry` IN (600695);
+INSERT INTO `skinning_loot_template` (Entry,Item,Reference,Chance,QuestRequired,LootMode,GroupId,MinCount,MaxCount,Comment) VALUES
 	 (600695,4304,0,41.4656,0,1,1,1,1,'Plaguehound - Thick Leather'),
 	 (600695,8169,0,3.0496,0,1,1,1,1,'Plaguehound - Thick Hide'),
 	 (600695,8170,0,50.66,0,1,1,1,1,'Plaguehound - Rugged Leather'),
 	 (600695,8171,0,4.8248,0,1,1,1,1,'Plaguehound - Rugged Hide');
 
 
+DELETE FROM `creature`
+WHERE `id` IN (
+9001642, 9001643, 9001644, 9001645, 9001646, 9001647, 9001648, 9001649, 9001650, 9001651,
+9001652, 9001653, 9001654, 9001655, 9001656, 9001657, 9001658, 9001659, 9001660, 9001661,
+9001662, 9001663, 9001664, 9001665, 9001666, 9001667, 9001668, 9001669, 9001670, 9001671,
+9001672, 9001673, 9001674, 9001675, 9001676, 9001677, 9001678, 9001679, 9001680, 9001681,
+9001682, 9001683, 9001684, 9001685, 9001686, 9001687, 9001688, 9001689, 9001690, 9001691,
+9001692, 9001693, 9001694, 9001695, 9001696, 9001697, 9001698, 9001699, 9001700, 9001701,
+9001702, 9001703, 9001704, 9001705, 9001706, 9001707, 9001708, 9001709, 9001710, 9001711,
+9001712, 9001713, 9001714, 9001715, 9001716, 9001717, 9001718, 9001719, 9001720, 9001721,
+9001722, 9001723, 9001724, 9001725, 9001726, 9001727, 9001728, 9001729, 9001730, 9001731,
+9001732, 9001733, 9001734, 9001735, 9001736, 9001737, 9001738, 9001739, 9001740, 9001741,
+9001742, 9001743, 9001744, 9001745, 9001746, 9001747, 9001748, 9001749, 9001750, 9001751,
+9001752, 9001753, 9001754, 9001755, 9001756, 9001757, 9001758, 9001761, 9001764, 9001767
+);
 INSERT INTO `creature` 
 (`guid`, `id1`, `id2`, `id3`, `map`, `zoneId`, `areaId`, `spawnMask`, `phaseMask`, `equipment_id`, `position_x`, `position_y`, `position_z`, `orientation`, `spawntimesecs`, `wander_distance`, `currentwaypoint`, `curhealth`, `curmana`, `MovementType`, `npcflag`, `unit_flags`, `dynamicflags`, `ScriptName`, `VerifiedBuild`) 
 VALUES
@@ -624,7 +651,8 @@ VALUES
 (9001767, 600700, 0, 0, 906, 0, 0, 1, 1, 0, -1698.36, -4261.88, 2.49885, 2.43984, 1800, 5.0, 0, 1476628, 0, 1, 0, 0, 0, '', 0);
 
 
-INSERT INTO smart_scripts (entryorguid,source_type,id,link,event_type,event_phase_mask,event_chance,event_flags,event_param1,event_param2,event_param3,event_param4,event_param5,event_param6,action_type,action_param1,action_param2,action_param3,action_param4,action_param5,action_param6,target_type,target_param1,target_param2,target_param3,target_param4,target_x,target_y,target_z,target_o,comment) VALUES
+DELETE FROM `smart_scripts` WHERE `entry` IN (600689,600690,600691,600692,600693,600694,600695,600696,600697);
+INSERT INTO `smart_scripts` (entryorguid,source_type,id,link,event_type,event_phase_mask,event_chance,event_flags,event_param1,event_param2,event_param3,event_param4,event_param5,event_param6,action_type,action_param1,action_param2,action_param3,action_param4,action_param5,action_param6,target_type,target_param1,target_param2,target_param3,target_param4,target_x,target_y,target_z,target_o,comment) VALUES
 	 (600689,0,0,0,1,0,100,513,1000,1000,1000,1000,0,0,11,58847,2,0,0,0,0,11,31245,30,0,0,0.0,0.0,0.0,0.0,'Scourge Adept - Out of Combat - Cast ''Green Cultist Beam'' (No Repeat)'),
 	 (600689,0,1,0,0,0,100,0,4000,7000,6000,9000,0,0,11,60646,0,0,0,0,0,2,0,0,0,0,0.0,0.0,0.0,0.0,'Scourge Adept - In Combat - Cast ''Shadow Blast'''),
 	 (600689,0,2,0,2,0,100,0,0,80,20000,30000,0,0,11,17238,0,0,0,0,0,2,0,0,0,0,0.0,0.0,0.0,0.0,'Scourge Adept - Between 0-80% Health - Cast ''Drain Life'''),
