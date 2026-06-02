@@ -28,7 +28,7 @@ INSERT INTO `creature_template` (`entry`, `difficulty_entry_1`, `difficulty_entr
 -- ======================================================
 -- CREATURE TEMPLATE MODEL
 -- ======================================================
-DELETE FROM `creature_template_model` WHERE entry IN (9500639, 9500643, 9500644);
+DELETE FROM `creature_template_model` WHERE CreatureID IN (9500639, 9500643, 9500644);
 INSERT INTO `creature_template_model` (`CreatureID`,`Idx`,`CreatureDisplayID`,`DisplayScale`,`Probability`,`VerifiedBuild`) VALUES
 	 (9500639,0,34079,1.7,1,0),
 	 (9500643,0,34082,1.3,1,12340),
@@ -37,7 +37,7 @@ INSERT INTO `creature_template_model` (`CreatureID`,`Idx`,`CreatureDisplayID`,`D
 -- ======================================================
 -- CREATURE EQUIP TEMPLATE
 -- ======================================================
-DELETE FROM `creature_equip_template` WHERE entry IN (9500639, 9500643, 9500644);
+DELETE FROM `creature_equip_template` WHERE CreatureID IN (9500639, 9500643, 9500644);
 INSERT INTO `creature_equip_template` (`CreatureID`,`ID`,`ItemID1`,`ItemID2`,`ItemID3`,`VerifiedBuild`) VALUES
 	 (9500639,1,1728,0,0,0),
 	 (9500643,1,45972,0,28286,0),
@@ -47,7 +47,7 @@ INSERT INTO `creature_equip_template` (`CreatureID`,`ID`,`ItemID1`,`ItemID2`,`It
 -- CREATURE TEMPLATE RESISTANCE
 -- ======================================================
 
-DELETE FROM `creature_template_resistance` WHERE entry IN (888432, 9500643);
+DELETE FROM `creature_template_resistance` WHERE CreatureID IN (888432, 9500643);
 INSERT INTO `creature_template_resistance` (`CreatureID`,`School`,`Resistance`,`VerifiedBuild`) VALUES
 	 (888432,2,50,0),
 	 (9500643,6,100,12340);
@@ -193,36 +193,6 @@ VALUES
 
 -- Darth Vader (Boss) - 1 spawn
 (10001064, 9500644, 0, 0, 805, 0, 0, 1, 1, 1, 12831.3, 14946.4, 6.31482, 1.30042, 1800, 0.0, 0, 3050532864, 222500, 0, 0, 0, 0, '', NULL, 0, 'Darth Vader');
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

@@ -3,10 +3,12 @@
 -- ######################################################--
 
 -- Delve Chest Template (Reward Chest - All Elite Zones)
+DELETE FROM `gameobject_template` WHERE `entry` = 130000;
 INSERT INTO `gameobject_template` (`entry`, `type`, `displayId`, `name`, `IconName`, `castBarCaption`, `unk1`, `size`, `Data0`, `Data1`, `Data2`, `Data3`, `Data4`, `Data5`, `Data6`, `Data7`, `Data8`, `Data9`, `Data10`, `Data11`, `Data12`, `Data13`, `Data14`, `Data15`, `Data16`, `Data17`, `Data18`, `Data19`, `Data20`, `Data21`, `Data22`, `Data23`, `AIName`, `ScriptName`, `VerifiedBuild`) VALUES
 (130000, 3, 259, 'Delve Chest', '', '', '', 1, 57, 110000, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, '', '', 0);
 
 -- Delve Chest Loot
+DELETE FROM `gameobject_loot_template` WHERE `Entry` = 110000;
 INSERT INTO `gameobject_loot_template` (`Entry`, `Item`, `Reference`, `Chance`, `QuestRequired`, `LootMode`, `GroupId`, `MinCount`, `MaxCount`, `Comment`) VALUES
 (110000, 43949, 0, 33, 0, 1, 0, 1, 3, 'Delve Token'),
 (110000, 910001, 0, 33, 0, 1, 0, 1, 3, 'Araxia Token'),
@@ -14,6 +16,7 @@ INSERT INTO `gameobject_loot_template` (`Entry`, `Item`, `Reference`, `Chance`, 
 (110000, 911001, 0, 1, 0, 1, 0, 1, 1, 'Onyx Spike Relic');
 
 -- Delve Chest Spawns (Reward Chests in Elite Zones)
+DELETE FROM `gameobject` WHERE `id` = 130000;
 INSERT INTO `gameobject` (`guid`, `id`, `map`, `spawnMask`, `phaseMask`, `position_x`, `position_y`, `position_z`, `orientation`, `rotation0`, `rotation1`, `rotation2`, `rotation3`, `spawntimesecs`, `animprogress`, `state`, `VerifiedBuild`) VALUES
 (8001900, 130000, 905, 1, 1, -12893, -1483.39, 132.114, 0.620313, 0, 0, -0.305208, -0.952286, 300, 0, 1, 0), -- Delve Chest - Sandfury Delve (Map 905)
 (8001902, 130000, 911, 1, 1, -11984, -2403.69, 5.06639, 0.0805792, 0, 0, -0.0402788, -0.999189, 300, 0, 1, 0), -- Delve Chest - Altar of Storms (Map 911)
@@ -33,6 +36,7 @@ INSERT INTO `gameobject` (`guid`, `id`, `map`, `spawnMask`, `phaseMask`, `positi
 -- ######################################################--
 -- DECORATIONS - EXPLOSIVES AREA (Map 900 - Stonetalon Ruins)
 -- ######################################################--
+DELETE FROM `gameobject` WHERE `id` IN (193401,1670,201906,184445,191841,184700,192787,190228,186763,182957,184845);
 
 -- Bomb Stack Inactive
 INSERT INTO `gameobject` (`guid`, `id`, `map`, `spawnMask`, `phaseMask`, `position_x`, `position_y`, `position_z`, `orientation`, `rotation0`, `rotation1`, `rotation2`, `rotation3`, `spawntimesecs`, `animprogress`, `state`, `VerifiedBuild`) VALUES
@@ -101,6 +105,7 @@ INSERT INTO `gameobject` (`guid`, `id`, `map`, `spawnMask`, `phaseMask`, `positi
 -- ######################################################--
 -- DECORATIONS - TROLL VILLAGE (Map 905 - Sandfury Delve)
 -- ######################################################--
+DELETE FROM `gameobject` WHERE `id` IN (20977,186250,1799,3659,3695,185167,202886);
 
 -- Troll Bonfire
 INSERT INTO `gameobject` (`guid`, `id`, `map`, `spawnMask`, `phaseMask`, `position_x`, `position_y`, `position_z`, `orientation`, `rotation0`, `rotation1`, `rotation2`, `rotation3`, `spawntimesecs`, `animprogress`, `state`, `VerifiedBuild`) VALUES
@@ -135,6 +140,7 @@ INSERT INTO `gameobject` (`guid`, `id`, `map`, `spawnMask`, `phaseMask`, `positi
 -- ######################################################--
 -- DECORATIONS - PIRATE CAMP (Map 908 - Quel'Thalas Island)
 -- ######################################################--
+DELETE FROM `gameobject` WHERE `id` IN (180043,186250,1801,187083);
 
 -- Free Standing Torch 01
 INSERT INTO `gameobject` (`guid`, `id`, `map`, `spawnMask`, `phaseMask`, `position_x`, `position_y`, `position_z`, `orientation`, `rotation0`, `rotation1`, `rotation2`, `rotation3`, `spawntimesecs`, `animprogress`, `state`, `VerifiedBuild`) VALUES
