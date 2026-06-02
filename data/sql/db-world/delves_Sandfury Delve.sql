@@ -1,17 +1,21 @@
-INSERT INTO creature_template (entry,difficulty_entry_1,difficulty_entry_2,difficulty_entry_3,KillCredit1,KillCredit2,name,subname,IconName,gossip_menu_id,minlevel,maxlevel,`exp`,faction,npcflag,speed_walk,speed_run,speed_swim,speed_flight,detection_range,`scale`,`rank`,dmgschool,DamageModifier,BaseAttackTime,RangeAttackTime,BaseVariance,RangeVariance,unit_class,unit_flags,unit_flags2,dynamicflags,family,trainer_type,trainer_spell,trainer_class,trainer_race,`type`,type_flags,lootid,pickpocketloot,skinloot,PetSpellDataId,VehicleId,mingold,maxgold,AIName,MovementType,HoverHeight,HealthModifier,ManaModifier,ArmorModifier,ExperienceModifier,RacialLeader,movementId,RegenHealth,mechanic_immune_mask,spell_school_immune_mask,flags_extra,ScriptName,VerifiedBuild) VALUES
-	 (600613,0,0,0,0,0,'Sandfury Axe Thrower','Delve',NULL,0,83,83,1,168,0,1.0,1.42857,1.0,1.0,20.0,1.0,1,0,27.0,2000,2000,1.0,1.0,1,32832,2048,0,0,0,0,0,0,7,72,23542,0,0,0,0,0,0,'SmartAI',0,1.0,28.4,1.0,1.0,1.0,0,144,1,0,0,0,'',12340),
-	 (600614,0,0,0,0,0,'Sandfury Firecaller','Delve',NULL,0,83,83,0,168,0,1.0,1.14286,1.0,1.0,20.0,1.0,1,0,17.3,2000,2000,1.0,1.0,2,32768,2048,0,0,0,0,0,0,7,0,23596,0,0,0,0,232,878,'SmartAI',1,1.0,27.6,4.0,1.0,1.0,0,0,1,0,0,0,'',12340),
-	 (600615,0,0,0,0,0,'Sandfury Shadowcaster','Delve',NULL,0,83,83,0,168,0,1.0,1.14286,1.0,1.0,20.0,1.0,1,0,25.53,2000,2000,1.0,1.0,2,32832,2048,0,0,0,0,0,0,7,8,23581,0,0,0,0,1155,2162,'SmartAI',1,1.0,30.0,6.0,1.15,1.0,0,0,1,0,0,0,'',12340),
-	 (600616,0,0,0,0,0,'Sandfury Blood Drinker','Delve',NULL,0,83,83,0,168,0,1.0,1.14286,1.0,1.0,20.0,1.0,1,0,19.0,2000,2000,1.0,1.0,1,32832,2048,0,0,0,0,0,0,7,0,23582,0,0,0,0,209,1360,'SmartAI',1,1.0,36.0,4.0,1.1,1.0,0,0,1,0,0,0,'',12340),
-	 (600617,0,0,0,0,0,'Sandfury Witch Doctor','Delve','',0,83,83,2,168,0,1.0,1.14286,1.0,1.0,20.0,1.0,1,0,23.45,1500,2000,1.0,1.0,2,32768,2048,0,0,0,0,0,0,7,0,23581,0,0,0,0,1178,1964,'SmartAI',0,1.0,38.0,12.0,1.1,1.0,0,0,1,0,0,0,'',12340),
-	 (600618,0,0,0,0,0,'Sandfury Executioner','Delve',NULL,0,83,83,0,168,0,1.0,1.14286,1.0,1.0,20.0,1.0,1,0,18.75,2600,2000,1.0,1.0,1,32832,2048,0,0,0,0,0,0,7,0,23580,0,0,0,0,483,1191,'SmartAI',1,1.0,32.6,8.0,1.1,1.0,0,0,1,8388624,0,0,'',12340),
-	 (600619,0,0,0,0,0,'Sandfury Plague Spreader','Delve','',0,83,83,2,168,0,0.66667,1.14286,1.0,1.0,20.0,1.0,1,0,18.35,2000,2000,1.0,1.0,1,0,2048,0,0,0,0,0,0,7,0,23597,0,0,0,0,0,0,'SmartAI',0,1.0,32.1,2.0,1.2,1.0,0,0,1,8388624,0,0,'',12340),
-	 (600620,0,0,0,0,0,'Sandfury Shadowhunter','Delve Boss',NULL,0,83,83,0,168,0,1.0,1.14286,1.0,1.0,20.0,1.0,1,0,26.4,2000,2000,1.0,1.0,2,32832,2048,0,0,0,0,0,0,7,0,24059,0,0,0,0,208,1318,'SmartAI',1,1.0,28.35,8.0,1.1,1.0,0,0,1,0,0,0,'',12340),
-	 (600621,0,0,0,0,0,'Souse''San Rhazon','Delve Boss',NULL,0,83,83,0,168,0,1.0,1.21429,1.0,1.0,20.0,1.0,3,0,65.0,1000,2000,1.0,1.0,1,32832,2048,0,0,0,0,0,0,6,108,600621,0,0,0,0,250000,300000,'',1,1.0,195.0,1.0,1.2,1.1,0,0,1,617299839,0,0,'',12340),
-	 (600622,0,0,0,0,0,'Xan''tosh','Delve Boss',NULL,0,83,83,0,168,0,1.0,1.71429,1.0,1.0,20.0,1.0,3,0,35.0,2000,2000,1.0,1.0,2,64,2048,0,0,0,0,0,0,7,76,600622,0,0,0,0,1280454,1565000,'',1,1.0,115.0,2.0,1.1,2.0,0,0,1,1019953019,0,0,'',12340),
-	 (600623,0,0,0,0,0,'Chief Runetusk','Delve Boss',NULL,0,84,84,0,168,0,1.6,1.14286,1.0,1.0,20.0,1.0,3,0,30.0,2000,2000,1.0,1.0,1,32832,2048,0,0,0,0,0,0,7,108,600623,0,0,0,0,399,1620,'',1,1.0,110.7,2.0,1.1,2.0,0,0,1,650854271,0,0,'',12340);
 
 
+DELETE FROM `creature_template` WHERE `entry` IN (600613,600614,600615,600616,600617,600618,600619,600620,600621,600622,600623);
+INSERT INTO `creature_template` (`entry`, `difficulty_entry_1`, `difficulty_entry_2`, `difficulty_entry_3`, `KillCredit1`, `KillCredit2`, `name`, `subname`, `IconName`, `gossip_menu_id`, `minlevel`, `maxlevel`, `exp`, `faction`, `npcflag`, `speed_walk`, `speed_run`, `speed_swim`, `speed_flight`, `detection_range`, `rank`, `dmgschool`, `DamageModifier`, `BaseAttackTime`, `RangeAttackTime`, `BaseVariance`, `RangeVariance`, `unit_class`, `unit_flags`, `unit_flags2`, `dynamicflags`, `family`, `type`, `type_flags`, `lootid`, `pickpocketloot`, `skinloot`, `PetSpellDataId`, `VehicleId`, `mingold`, `maxgold`, `AIName`, `MovementType`, `HoverHeight`, `HealthModifier`, `ManaModifier`, `ArmorModifier`, `ExperienceModifier`, `RacialLeader`, `movementId`, `RegenHealth`, `flags_extra`, `ScriptName`, `VerifiedBuild`) VALUES
+    (600613, 0, 0, 0, 0, 0, 'Sandfury Axe Thrower', 'Delve', NULL, 0, 83, 83, 1, 168, 0, 1.0, 1.42857, 1.0, 1.0, 20.0, 1, 0, 27.0, 2000, 2000, 1.0, 1.0, 1, 32832, 2048, 0, 0, 7, 72, 23542, 0, 0, 0, 0, 0, 0, 'SmartAI', 0, 1.0, 28.4, 1.0, 1.0, 1.0, 0, 144, 1, 0, '', 12340),
+    (600614, 0, 0, 0, 0, 0, 'Sandfury Firecaller', 'Delve', NULL, 0, 83, 83, 0, 168, 0, 1.0, 1.14286, 1.0, 1.0, 20.0, 1, 0, 17.3, 2000, 2000, 1.0, 1.0, 2, 32768, 2048, 0, 0, 7, 0, 23596, 0, 0, 0, 0, 232, 878, 'SmartAI', 1, 1.0, 27.6, 4.0, 1.0, 1.0, 0, 0, 1, 0, '', 12340),
+    (600615, 0, 0, 0, 0, 0, 'Sandfury Shadowcaster', 'Delve', NULL, 0, 83, 83, 0, 168, 0, 1.0, 1.14286, 1.0, 1.0, 20.0, 1, 0, 25.53, 2000, 2000, 1.0, 1.0, 2, 32832, 2048, 0, 0, 7, 8, 23581, 0, 0, 0, 0, 1155, 2162, 'SmartAI', 1, 1.0, 30.0, 6.0, 1.15, 1.0, 0, 0, 1, 0, '', 12340),
+    (600616, 0, 0, 0, 0, 0, 'Sandfury Blood Drinker', 'Delve', NULL, 0, 83, 83, 0, 168, 0, 1.0, 1.14286, 1.0, 1.0, 20.0, 1, 0, 19.0, 2000, 2000, 1.0, 1.0, 1, 32832, 2048, 0, 0, 7, 0, 23582, 0, 0, 0, 0, 209, 1360, 'SmartAI', 1, 1.0, 36.0, 4.0, 1.1, 1.0, 0, 0, 1, 0, '', 12340),
+    (600617, 0, 0, 0, 0, 0, 'Sandfury Witch Doctor', 'Delve', '', 0, 83, 83, 2, 168, 0, 1.0, 1.14286, 1.0, 1.0, 20.0, 1, 0, 23.45, 1500, 2000, 1.0, 1.0, 2, 32768, 2048, 0, 0, 7, 0, 23581, 0, 0, 0, 0, 1178, 1964, 'SmartAI', 0, 1.0, 38.0, 12.0, 1.1, 1.0, 0, 0, 1, 0, '', 12340),
+    (600618, 0, 0, 0, 0, 0, 'Sandfury Executioner', 'Delve', NULL, 0, 83, 83, 0, 168, 0, 1.0, 1.14286, 1.0, 1.0, 20.0, 1, 0, 18.75, 2600, 2000, 1.0, 1.0, 1, 32832, 2048, 0, 0, 7, 0, 23580, 0, 0, 0, 0, 483, 1191, 'SmartAI', 1, 1.0, 32.6, 8.0, 1.1, 1.0, 0, 0, 1, 0, '', 12340),
+    (600619, 0, 0, 0, 0, 0, 'Sandfury Plague Spreader', 'Delve', '', 0, 83, 83, 2, 168, 0, 0.66667, 1.14286, 1.0, 1.0, 20.0, 1, 0, 18.35, 2000, 2000, 1.0, 1.0, 1, 0, 2048, 0, 0, 7, 0, 23597, 0, 0, 0, 0, 0, 0, 'SmartAI', 0, 1.0, 32.1, 2.0, 1.2, 1.0, 0, 0, 1, 0, '', 12340),
+    (600620, 0, 0, 0, 0, 0, 'Sandfury Shadowhunter', 'Delve Boss', NULL, 0, 83, 83, 0, 168, 0, 1.0, 1.14286, 1.0, 1.0, 20.0, 1, 0, 26.4, 2000, 2000, 1.0, 1.0, 2, 32832, 2048, 0, 0, 7, 0, 24059, 0, 0, 0, 0, 208, 1318, 'SmartAI', 1, 1.0, 28.35, 8.0, 1.1, 1.0, 0, 0, 1, 0, '', 12340),
+    (600621, 0, 0, 0, 0, 0, 'Souse''San Rhazon', 'Delve Boss', NULL, 0, 83, 83, 0, 168, 0, 1.0, 1.21429, 1.0, 1.0, 20.0, 3, 0, 65.0, 1000, 2000, 1.0, 1.0, 1, 32832, 2048, 0, 0, 6, 108, 600621, 0, 0, 0, 0, 250000, 300000, '', 1, 1.0, 195.0, 1.0, 1.2, 1.1, 0, 0, 1, 0, '', 12340),
+    (600622, 0, 0, 0, 0, 0, 'Xan''tosh', 'Delve Boss', NULL, 0, 83, 83, 0, 168, 0, 1.0, 1.71429, 1.0, 1.0, 20.0, 3, 0, 35.0, 2000, 2000, 1.0, 1.0, 2, 64, 2048, 0, 0, 7, 76, 600622, 0, 0, 0, 0, 1280454, 1565000, '', 1, 1.0, 115.0, 2.0, 1.1, 2.0, 0, 0, 1, 0, '', 12340),
+    (600623, 0, 0, 0, 0, 0, 'Chief Runetusk', 'Delve Boss', NULL, 0, 84, 84, 0, 168, 0, 1.6, 1.14286, 1.0, 1.0, 20.0, 3, 0, 30.0, 2000, 2000, 1.0, 1.0, 1, 32832, 2048, 0, 0, 7, 108, 600623, 0, 0, 0, 0, 399, 1620, '', 1, 1.0, 110.7, 2.0, 1.1, 2.0, 0, 0, 1, 0, '', 12340);
+
+
+DELETE FROM `creature_template_model` WHERE `CreatureID` IN (600613,600614,600615,600616,600617,600618,600619,600620,600621,600622,600623);
 INSERT INTO creature_template_model (CreatureID,Idx,CreatureDisplayID,DisplayScale,Probability,VerifiedBuild) VALUES
 	 (600613,0,22273,1.0,1.0,12340),
 	 (600613,1,22274,1.0,1.0,12340),
@@ -32,6 +36,8 @@ INSERT INTO creature_template_model (CreatureID,Idx,CreatureDisplayID,DisplaySca
 	 (600622,0,7353,1.0,1.0,12340),
 	 (600623,0,6439,1.0,1.0,12340);
 
+
+DELETE FROM `creature_template_spell` WHERE `CreatureID` IN (600616,600618,600619,600620,600621,600623);
 INSERT INTO creature_template_spell (CreatureID,`Index`,Spell,VerifiedBuild) VALUES
 	 (600616,0,11898,12340),
 	 (600618,0,7160,12340),
@@ -49,8 +55,9 @@ INSERT INTO creature_template_spell (CreatureID,`Index`,Spell,VerifiedBuild) VAL
 	 (600623,1,15496,12340),
 	 (600623,2,34409,12340),
 	 (600623,3,7366,12340);
-
-	 INSERT INTO creature_equip_template (CreatureID,ID,ItemID1,ItemID2,ItemID3,VerifiedBuild) VALUES
+	 
+DELETE FROM `creature_equip_template` WHERE `CreatureID` IN (600613,600614,600615,600616,600618,600620,600621,600622,600623);
+INSERT INTO creature_equip_template (CreatureID,ID,ItemID1,ItemID2,ItemID3,VerifiedBuild) VALUES
 	 (600613,1,33981,0,28972,18019),
 	 (600614,1,5276,0,0,18019),
 	 (600615,1,13705,0,0,18019),
@@ -60,7 +67,9 @@ INSERT INTO creature_template_spell (CreatureID,`Index`,Spell,VerifiedBuild) VAL
 	 (600621,1,5300,0,0,18019),
 	 (600622,1,2182,0,0,18019),
 	 (600623,1,11542,0,0,18019);
-
+	 
+	 
+DELETE FROM `creature_loot_template` WHERE `Entry` IN (600613,600614,600615,600616,600617,600618);
 INSERT INTO creature_loot_template (Entry,Item,Reference,Chance,QuestRequired,LootMode,GroupId,MinCount,MaxCount,Comment) VALUES
 	 (600613,21877,0,16.705,0,1,0,2,3,'Amani''shi Axe Thrower - Netherweave Cloth'),
 	 (600613,22903,0,0.2,0,1,0,1,1,'Amani''shi Axe Thrower - Recipe: Insane Strength Potion'),
@@ -767,7 +776,7 @@ VALUES
 -- ==================================================================================
 -- Smart Scripts
 -- ==================================================================================
-
+DELETE FROM `smart_scripts` WHERE `entryorguid` IN (600613,600614,600615,600616,600617,600618,600619,600620);
 INSERT INTO smart_scripts (entryorguid,source_type,id,link,event_type,event_phase_mask,event_chance,event_flags,event_param1,event_param2,event_param3,event_param4,event_param5,event_param6,action_type,action_param1,action_param2,action_param3,action_param4,action_param5,action_param6,target_type,target_param1,target_param2,target_param3,target_param4,target_x,target_y,target_z,target_o,comment) VALUES
 	 (600613,0,0,0,0,0,100,2,0,0,12000,12000,0,0,11,31566,0,0,0,0,0,2,0,0,0,0,0.0,0.0,0.0,0.0,'Sandfury Axe Thrower - In Combat - Cast ''Raptor Strike'' (Normal Dungeon)'),
 	 (600613,0,1,0,0,0,100,2,0,0,7400,7400,0,0,11,35011,0,0,0,0,0,2,0,0,0,0,0.0,0.0,0.0,0.0,'Sandfury Axe Thrower - In Combat - Cast ''Knockdown'' (Normal Dungeon)'),

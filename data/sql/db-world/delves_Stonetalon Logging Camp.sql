@@ -1,12 +1,15 @@
-INSERT INTO creature_template (entry,difficulty_entry_1,difficulty_entry_2,difficulty_entry_3,KillCredit1,KillCredit2,name,subname,IconName,gossip_menu_id,minlevel,maxlevel,`exp`,faction,npcflag,speed_walk,speed_run,speed_swim,speed_flight,detection_range,`scale`,`rank`,dmgschool,DamageModifier,BaseAttackTime,RangeAttackTime,BaseVariance,RangeVariance,unit_class,unit_flags,unit_flags2,dynamicflags,family,trainer_type,trainer_spell,trainer_class,trainer_race,`type`,type_flags,lootid,pickpocketloot,skinloot,PetSpellDataId,VehicleId,mingold,maxgold,AIName,MovementType,HoverHeight,HealthModifier,ManaModifier,ArmorModifier,ExperienceModifier,RacialLeader,movementId,RegenHealth,mechanic_immune_mask,spell_school_immune_mask,flags_extra,ScriptName,VerifiedBuild) VALUES
-	 (600657,0,0,0,0,0,'Venture Co. Shredder','Delve',NULL,0,83,83,0,168,0,1.6,1.19048,1.0,1.0,20.0,0.84,1,0,36.9,2000,2000,1.0,1.0,1,32768,2048,0,0,0,0,0,0,7,0,600657,0,0,0,0,180,240,'SmartAI',1,1.0,38.0,1.0,1.0,1.0,0,51,1,0,0,0,'',12340),
-	 (600658,0,0,0,0,0,'Venture Co. Taskmaster','Delve',NULL,0,83,83,1,168,0,1.0,1.19048,1.0,1.0,20.0,1.0,1,0,36.9,2000,2000,1.0,1.0,1,32768,2048,0,0,0,0,0,0,7,0,600658,0,0,0,0,169,225,'SmartAI',1,1.0,38.0,1.0,0.97,1.0,0,0,1,0,0,0,'',12340),
-	 (600659,0,0,0,0,0,'Venture Co. Ruffian','Delve',NULL,0,82,82,0,168,0,3.2,1.71429,1.0,1.0,20.0,1.0,1,0,35.1,2000,2000,1.0,1.0,1,0,2048,0,0,0,0,0,0,7,0,600659,0,0,0,0,16,25,'SmartAI',0,1.0,30.0,10.0,1.0,1.0,0,0,1,0,0,0,'',12340),
-	 (600660,0,0,0,0,0,'Venture Co. Enforcer','Delve',NULL,0,83,84,0,168,0,1.0,1.15287,1.0,1.0,20.0,1.3,1,0,7.5,2000,2000,1.0,1.0,1,32768,2048,0,0,0,0,0,0,7,0,600660,600660,0,0,0,73,452,'SmartAI',0,1.0,35.0,1.0,1.0,1.0,0,0,1,0,0,0,'',12340),
-	 (600661,0,0,0,0,0,'Venture Co. Tinkerer','Delve',NULL,0,83,84,0,168,0,1.0,1.71429,1.0,1.0,20.0,1.0,1,0,7.5,2000,2000,1.0,1.0,8,32768,2048,0,0,0,0,0,0,7,0,600661,600661,0,0,0,66,444,'SmartAI',0,1.0,25.0,10.0,1.0,1.0,0,0,1,0,0,0,'',12340),
-	 (600701,0,0,0,0,0,'Overlord Snivey','Delve Boss',NULL,0,85,85,0,168,0,1.0,1.14286,1.0,1.0,20.0,1.4,3,0,36.0,2000,2000,1.0,1.0,2,0,2048,0,0,0,0,0,0,7,4,600701,600701,0,0,0,57,311,'',0,1.0,75.0,20.0,1.2,1.0,0,0,1,0,0,0,'',12340),
-	 (600702,0,0,0,0,0,'Overlord Moosh','Delve Boss',NULL,0,85,85,0,90,0,1.2,1.14857,1.0,1.0,20.0,1.0,3,0,36.0,1500,2000,1.0,1.0,1,0,2048,0,0,0,0,0,0,3,4,600702,0,0,0,0,453,625,'',0,1.0,90.0,50.0,1.3,1.0,0,0,1,0,0,0,'',12340);
 
+DELETE FROM `creature_template` WHERE `entry` IN (600657,600658,600659,600660,600661,600701,600702);
+INSERT INTO `creature_template` (`entry`, `difficulty_entry_1`, `difficulty_entry_2`, `difficulty_entry_3`, `KillCredit1`, `KillCredit2`, `name`, `subname`, `IconName`, `gossip_menu_id`, `minlevel`, `maxlevel`, `exp`, `faction`, `npcflag`, `speed_walk`, `speed_run`, `speed_swim`, `speed_flight`, `detection_range`, `rank`, `dmgschool`, `DamageModifier`, `BaseAttackTime`, `RangeAttackTime`, `BaseVariance`, `RangeVariance`, `unit_class`, `unit_flags`, `unit_flags2`, `dynamicflags`, `family`, `type`, `type_flags`, `lootid`, `pickpocketloot`, `skinloot`, `PetSpellDataId`, `VehicleId`, `mingold`, `maxgold`, `AIName`, `MovementType`, `HoverHeight`, `HealthModifier`, `ManaModifier`, `ArmorModifier`, `ExperienceModifier`, `RacialLeader`, `movementId`, `RegenHealth`, `flags_extra`, `ScriptName`, `VerifiedBuild`) VALUES
+    (600657, 0, 0, 0, 0, 0, 'Venture Co. Shredder', 'Delve', NULL, 0, 83, 83, 0, 168, 0, 1.6, 1.19048, 1.0, 1.0, 20.0, 1, 0, 36.9, 2000, 2000, 1.0, 1.0, 1, 32768, 2048, 0, 0, 7, 0, 600657, 0, 0, 0, 0, 180, 240, 'SmartAI', 1, 1.0, 38.0, 1.0, 1.0, 1.0, 0, 51, 1, 0, '', 12340),
+    (600658, 0, 0, 0, 0, 0, 'Venture Co. Taskmaster', 'Delve', NULL, 0, 83, 83, 1, 168, 0, 1.0, 1.19048, 1.0, 1.0, 20.0, 1, 0, 36.9, 2000, 2000, 1.0, 1.0, 1, 32768, 2048, 0, 0, 7, 0, 600658, 0, 0, 0, 0, 169, 225, 'SmartAI', 1, 1.0, 38.0, 1.0, 0.97, 1.0, 0, 0, 1, 0, '', 12340),
+    (600659, 0, 0, 0, 0, 0, 'Venture Co. Ruffian', 'Delve', NULL, 0, 82, 82, 0, 168, 0, 3.2, 1.71429, 1.0, 1.0, 20.0, 1, 0, 35.1, 2000, 2000, 1.0, 1.0, 1, 0, 2048, 0, 0, 7, 0, 600659, 0, 0, 0, 0, 16, 25, 'SmartAI', 0, 1.0, 30.0, 10.0, 1.0, 1.0, 0, 0, 1, 0, '', 12340),
+    (600660, 0, 0, 0, 0, 0, 'Venture Co. Enforcer', 'Delve', NULL, 0, 83, 84, 0, 168, 0, 1.0, 1.15287, 1.0, 1.0, 20.0, 1, 0, 7.5, 2000, 2000, 1.0, 1.0, 1, 32768, 2048, 0, 0, 7, 0, 600660, 600660, 0, 0, 0, 73, 452, 'SmartAI', 0, 1.0, 35.0, 1.0, 1.0, 1.0, 0, 0, 1, 0, '', 12340),
+    (600661, 0, 0, 0, 0, 0, 'Venture Co. Tinkerer', 'Delve', NULL, 0, 83, 84, 0, 168, 0, 1.0, 1.71429, 1.0, 1.0, 20.0, 1, 0, 7.5, 2000, 2000, 1.0, 1.0, 8, 32768, 2048, 0, 0, 7, 0, 600661, 600661, 0, 0, 0, 66, 444, 'SmartAI', 0, 1.0, 25.0, 10.0, 1.0, 1.0, 0, 0, 1, 0, '', 12340),
+    (600701, 0, 0, 0, 0, 0, 'Overlord Snivey', 'Delve Boss', NULL, 0, 85, 85, 0, 168, 0, 1.0, 1.14286, 1.0, 1.0, 20.0, 3, 0, 36.0, 2000, 2000, 1.0, 1.0, 2, 0, 2048, 0, 0, 7, 4, 600701, 600701, 0, 0, 0, 57, 311, '', 0, 1.0, 75.0, 20.0, 1.2, 1.0, 0, 0, 1, 0, '', 12340),
+    (600702, 0, 0, 0, 0, 0, 'Overlord Moosh', 'Delve Boss', NULL, 0, 85, 85, 0, 90, 0, 1.2, 1.14857, 1.0, 1.0, 20.0, 3, 0, 36.0, 1500, 2000, 1.0, 1.0, 1, 0, 2048, 0, 0, 3, 4, 600702, 0, 0, 0, 0, 453, 625, '', 0, 1.0, 90.0, 50.0, 1.3, 1.0, 0, 0, 1, 0, '', 12340);
+
+DELETE FROM `creature_template_model` WHERE `CreatureID` IN (600657,600658,600659,600660,600661,600701,600702);
 INSERT INTO creature_template_model (CreatureID,Idx,CreatureDisplayID,DisplayScale,Probability,VerifiedBuild) VALUES
 	 (600657,0,1269,1.0,1.0,12340),
 	 (600658,0,355,1.0,1.0,12340),
@@ -23,7 +26,8 @@ INSERT INTO creature_template_model (CreatureID,Idx,CreatureDisplayID,DisplaySca
 	 (600661,0,7204,1.0,1.0,12340),
 	 (600701,0,7207,1.0,1.0,12340),
 	 (600702,0,7207,1.0,1.0,12340);
-
+	 
+DELETE FROM `creature_template_spell` WHERE `CreatureID` IN (600657,600659,600660,600661,600701,600702);
 INSERT INTO creature_template_spell (CreatureID,`Index`,Spell,VerifiedBuild) VALUES
 	 (600657,0,36203,0),
 	 (600659,0,52908,0),
@@ -41,11 +45,13 @@ INSERT INTO creature_template_spell (CreatureID,`Index`,Spell,VerifiedBuild) VAL
 	 (600702,3,41978,0),
 	 (600702,4,41177,0);
 
+DELETE FROM `creature_onkill_reputation` WHERE `creature_id` IN (600657,600661,600701);
 INSERT INTO creature_onkill_reputation (creature_id,RewOnKillRepFaction1,RewOnKillRepFaction2,MaxStanding1,IsTeamAward1,RewOnKillRepValue1,MaxStanding2,IsTeamAward2,RewOnKillRepValue2,TeamDependent) VALUES
 	 (600657,21,0,5,0,5.0,0,0,0.0,0),
 	 (600661,21,0,5,0,5.0,0,0,0.0,0),
 	 (600701,21,0,5,0,5.0,0,0,0.0,0);
-
+	 
+DELETE FROM `creature_equip_template` WHERE `CreatureID` IN (600658,600659,600660,600661,600701,600702);
 INSERT INTO creature_equip_template (CreatureID,ID,ItemID1,ItemID2,ItemID3,VerifiedBuild) VALUES
 	 (600658,1,1906,0,0,18019),
 	 (600659,1,36512,0,0,18019),
@@ -54,6 +60,7 @@ INSERT INTO creature_equip_template (CreatureID,ID,ItemID1,ItemID2,ItemID3,Verif
 	 (600701,1,2711,0,0,18019),
 	 (600702,1,10619,10619,0,18019);
 
+DELETE FROM `creature_loot_template` WHERE `Entry` IN (600657,600658,600659,600660,600661,600701,600702);
 INSERT INTO creature_loot_template (Entry,Item,Reference,Chance,QuestRequired,LootMode,GroupId,MinCount,MaxCount,Comment) VALUES
 	 (600657,1,1003140,6.0,0,1,0,1,1,'World Drop - Grey World Drop - NPC Levels: 31-40'),
 	 (600657,2,1023737,2.0,0,1,0,1,1,'World Drop - Green World Drop - NPC Levels: 37-37'),
@@ -494,7 +501,7 @@ VALUES
 -- ==================================================================================
 -- Smart Scripts
 -- ==================================================================================
-
+DELETE FROM `smart_scripts` WHERE `entryorguid` IN (600657,600658,600659,600660,600661);
 INSERT INTO smart_scripts (entryorguid,source_type,id,link,event_type,event_phase_mask,event_chance,event_flags,event_param1,event_param2,event_param3,event_param4,event_param5,event_param6,action_type,action_param1,action_param2,action_param3,action_param4,action_param5,action_param6,target_type,target_param1,target_param2,target_param3,target_param4,target_x,target_y,target_z,target_o,comment) VALUES
 	 (600657,0,0,0,2,0,100,1,20,80,0,0,0,0,11,36203,0,0,0,0,0,2,0,0,0,0,0.0,0.0,0.0,0.0,'Venture Co. Shredder - Between 20-80% Health - Cast ''Doomsaw'' (No Repeat)'),
 	 (600658,0,0,0,2,0,100,1,20,80,0,0,0,0,11,5679,0,0,0,0,0,2,0,0,0,0,0.0,0.0,0.0,0.0,'Venture Co. Taskmaster - Between 20-80% Health - Cast ''Torch Burn'' (No Repeat)'),

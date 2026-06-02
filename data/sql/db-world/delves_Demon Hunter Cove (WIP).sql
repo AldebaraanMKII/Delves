@@ -1,13 +1,17 @@
-INSERT INTO creature_template (entry,difficulty_entry_1,difficulty_entry_2,difficulty_entry_3,KillCredit1,KillCredit2,name,subname,IconName,gossip_menu_id,minlevel,maxlevel,`exp`,faction,npcflag,speed_walk,speed_run,speed_swim,speed_flight,detection_range,`scale`,`rank`,dmgschool,DamageModifier,BaseAttackTime,RangeAttackTime,BaseVariance,RangeVariance,unit_class,unit_flags,unit_flags2,dynamicflags,family,trainer_type,trainer_spell,trainer_class,trainer_race,`type`,type_flags,lootid,pickpocketloot,skinloot,PetSpellDataId,VehicleId,mingold,maxgold,AIName,MovementType,HoverHeight,HealthModifier,ManaModifier,ArmorModifier,ExperienceModifier,RacialLeader,movementId,RegenHealth,mechanic_immune_mask,spell_school_immune_mask,flags_extra,ScriptName,VerifiedBuild) VALUES
-	 (600681,0,0,0,0,0,'Felrage Defender','Delve',NULL,0,83,83,1,168,0,1.0,1.71429,1.0,1.0,20.0,1.0,1,0,30.05,2000,2000,1.0,1.0,1,32832,2048,0,0,0,0,0,0,7,0,600681,600681,0,0,0,1294,1695,'SmartAI',1,1.0,28.0,1.0,1.0,1.0,0,0,1,13108049,0,0,'',12340),
-	 (600682,0,0,0,0,0,'Felrage Soothsayer','Delve',NULL,0,83,83,1,168,0,1.0,1.14286,1.0,1.0,20.0,1.0,1,0,22.0,2000,1500,1.0,1.0,8,32832,2048,0,0,0,0,0,0,7,0,600682,600682,0,0,0,952,1249,'SmartAI',1,1.0,22.4,30.0,1.0,1.0,0,0,1,0,0,0,'',12340),
-	 (600683,0,0,0,0,0,'Felrage Demon Hunter','Delve',NULL,0,83,85,1,168,0,1.0,1.19048,1.0,1.0,20.0,1.0,1,0,36.9,2000,2000,1.0,1.0,1,32768,2048,0,0,0,0,0,0,7,0,600683,600683,0,0,0,169,225,'SmartAI',1,1.0,38.0,1.0,1.0,1.0,0,0,1,0,0,0,'',12340),
-	 (600684,0,0,0,0,0,'Demon Hunter Supplicant','Delve',NULL,0,84,84,1,168,0,1.6,1.42857,1.0,1.0,20.0,1.0,1,0,28.0,1600,1600,1.0,1.0,1,32768,2048,0,0,0,0,0,0,7,0,600684,600684,0,0,0,205,273,'SmartAI',1,1.0,17.5,1.0,1.0,1.0,0,0,1,0,0,0,'',12340),
-	 (600685,0,0,0,0,0,'Demon Hunter Initiate','Delve',NULL,0,84,84,1,168,0,1.3,1.42857,1.0,1.0,20.0,1.0,1,0,32.0,1600,1600,1.0,1.0,2,32768,2048,0,0,0,0,0,0,7,0,600685,600685,0,0,0,178,237,'SmartAI',1,1.0,28.0,15.0,1.0,1.0,0,0,1,0,0,0,'',12340),
-	 (600686,0,0,0,0,0,'Prince Sshekj','Delve Boss',NULL,0,83,83,1,168,0,1.0,1.42857,1.0,1.0,20.0,1.0,3,0,24.0,2000,2000,1.0,1.0,1,32832,2048,0,0,0,0,0,0,7,4,600686,0,0,0,0,1039,1362,'',1,1.0,85.0,10.0,1.1,1.0,0,0,1,1105,0,0,'',12340),
-	 (600687,0,0,0,0,0,'Lorthan','Delve Boss',NULL,0,85,85,0,168,0,1.0,1.14286,1.0,1.0,20.0,1.0,3,0,38.0,2000,2000,1.0,1.0,1,0,2048,0,0,0,0,0,0,7,4,600687,600687,0,0,0,399,1620,'',1,1.0,110.7,40.0,1.2,2.0,0,0,1,646659935,0,0,'',12340),
-	 (600688,0,0,0,0,0,'Axlenar','Delve Boss',NULL,0,85,85,0,168,0,1.0,2.14286,1.0,1.0,20.0,1.0,3,0,36.28,1000,2000,1.0,1.0,1,64,2048,0,0,0,0,0,0,7,4,600688,0,0,0,0,553,727,'',1,1.0,110.0,2.0,1.3,1.0,0,0,1,613105499,0,0,'',12340);
 
+DELETE FROM `creature_template` WHERE `entry` IN (600681,600682,600683,600684,600685,600686,600687,600688);
+INSERT INTO `creature_template` (`entry`, `difficulty_entry_1`, `difficulty_entry_2`, `difficulty_entry_3`, `KillCredit1`, `KillCredit2`, `name`, `subname`, `IconName`, `gossip_menu_id`, `minlevel`, `maxlevel`, `exp`, `faction`, `npcflag`, `speed_walk`, `speed_run`, `speed_swim`, `speed_flight`, `detection_range`, `rank`, `dmgschool`, `DamageModifier`, `BaseAttackTime`, `RangeAttackTime`, `BaseVariance`, `RangeVariance`, `unit_class`, `unit_flags`, `unit_flags2`, `dynamicflags`, `family`, `type`, `type_flags`, `lootid`, `pickpocketloot`, `skinloot`, `PetSpellDataId`, `VehicleId`, `mingold`, `maxgold`, `AIName`, `MovementType`, `HoverHeight`, `HealthModifier`, `ManaModifier`, `ArmorModifier`, `ExperienceModifier`, `RacialLeader`, `movementId`, `RegenHealth`, `flags_extra`, `ScriptName`, `VerifiedBuild`) VALUES
+    (600681, 0, 0, 0, 0, 0, 'Felrage Defender', 'Delve', NULL, 0, 83, 83, 1, 168, 0, 1.0, 1.71429, 1.0, 1.0, 20.0, 1, 0, 30.05, 2000, 2000, 1.0, 1.0, 1, 32832, 2048, 0, 0, 7, 0, 600681, 600681, 0, 0, 0, 1294, 1695, 'SmartAI', 1, 1.0, 28.0, 1.0, 1.0, 1.0, 0, 0, 1, 0, '', 12340),
+    (600682, 0, 0, 0, 0, 0, 'Felrage Soothsayer', 'Delve', NULL, 0, 83, 83, 1, 168, 0, 1.0, 1.14286, 1.0, 1.0, 20.0, 1, 0, 22.0, 2000, 1500, 1.0, 1.0, 8, 32832, 2048, 0, 0, 7, 0, 600682, 600682, 0, 0, 0, 952, 1249, 'SmartAI', 1, 1.0, 22.4, 30.0, 1.0, 1.0, 0, 0, 1, 0, '', 12340),
+    (600683, 0, 0, 0, 0, 0, 'Felrage Demon Hunter', 'Delve', NULL, 0, 83, 85, 1, 168, 0, 1.0, 1.19048, 1.0, 1.0, 20.0, 1, 0, 36.9, 2000, 2000, 1.0, 1.0, 1, 32768, 2048, 0, 0, 7, 0, 600683, 600683, 0, 0, 0, 169, 225, 'SmartAI', 1, 1.0, 38.0, 1.0, 1.0, 1.0, 0, 0, 1, 0, '', 12340),
+    (600684, 0, 0, 0, 0, 0, 'Demon Hunter Supplicant', 'Delve', NULL, 0, 84, 84, 1, 168, 0, 1.6, 1.42857, 1.0, 1.0, 20.0, 1, 0, 28.0, 1600, 1600, 1.0, 1.0, 1, 32768, 2048, 0, 0, 7, 0, 600684, 600684, 0, 0, 0, 205, 273, 'SmartAI', 1, 1.0, 17.5, 1.0, 1.0, 1.0, 0, 0, 1, 0, '', 12340),
+    (600685, 0, 0, 0, 0, 0, 'Demon Hunter Initiate', 'Delve', NULL, 0, 84, 84, 1, 168, 0, 1.3, 1.42857, 1.0, 1.0, 20.0, 1, 0, 32.0, 1600, 1600, 1.0, 1.0, 2, 32768, 2048, 0, 0, 7, 0, 600685, 600685, 0, 0, 0, 178, 237, 'SmartAI', 1, 1.0, 28.0, 15.0, 1.0, 1.0, 0, 0, 1, 0, '', 12340),
+    (600686, 0, 0, 0, 0, 0, 'Prince Sshekj', 'Delve Boss', NULL, 0, 83, 83, 1, 168, 0, 1.0, 1.42857, 1.0, 1.0, 20.0, 3, 0, 24.0, 2000, 2000, 1.0, 1.0, 1, 32832, 2048, 0, 0, 7, 4, 600686, 0, 0, 0, 0, 1039, 1362, '', 1, 1.0, 85.0, 10.0, 1.1, 1.0, 0, 0, 1, 0, '', 12340),
+    (600687, 0, 0, 0, 0, 0, 'Lorthan', 'Delve Boss', NULL, 0, 85, 85, 0, 168, 0, 1.0, 1.14286, 1.0, 1.0, 20.0, 3, 0, 38.0, 2000, 2000, 1.0, 1.0, 1, 0, 2048, 0, 0, 7, 4, 600687, 600687, 0, 0, 0, 399, 1620, '', 1, 1.0, 110.7, 40.0, 1.2, 2.0, 0, 0, 1, 0, '', 12340),
+    (600688, 0, 0, 0, 0, 0, 'Axlenar', 'Delve Boss', NULL, 0, 85, 85, 0, 168, 0, 1.0, 2.14286, 1.0, 1.0, 20.0, 3, 0, 36.28, 1000, 2000, 1.0, 1.0, 1, 64, 2048, 0, 0, 7, 4, 600688, 0, 0, 0, 0, 553, 727, '', 1, 1.0, 110.0, 2.0, 1.3, 1.0, 0, 0, 1, 0, '', 12340);
+	
+	
+DELETE FROM `creature_template_model` WHERE `CreatureID` IN (600681,600682,600683,600684,600685,600686,600687,600688);
 INSERT INTO creature_template_model (CreatureID,Idx,CreatureDisplayID,DisplayScale,Probability,VerifiedBuild) VALUES
 	 (600681,0,18387,1.0,1.0,12340),
 	 (600682,0,18395,1.0,1.0,12340),
@@ -23,7 +27,8 @@ INSERT INTO creature_template_model (CreatureID,Idx,CreatureDisplayID,DisplaySca
 	 (600686,0,6763,1.0,1.0,12340),
 	 (600687,0,20122,1.0,1.0,12340),
 	 (600688,0,20126,1.0,1.0,12340);
-
+	 
+DELETE FROM `creature_template_spell` WHERE `CreatureID` IN (600681,600682,600683,600684,600685,600686,600687,600688);
 INSERT INTO creature_template_spell (CreatureID,`Index`,Spell,VerifiedBuild) VALUES
 	 (600681,0,15655,12340),
 	 (600681,1,31554,12340),
@@ -48,11 +53,13 @@ INSERT INTO creature_template_spell (CreatureID,`Index`,Spell,VerifiedBuild) VAL
 	 (600688,2,36298,0),
 	 (600688,3,39082,0);
 
+DELETE FROM `creature_onkill_reputation` WHERE `creature_id` IN (600681,600682,600683);
 INSERT INTO creature_onkill_reputation (creature_id,RewOnKillRepFaction1,RewOnKillRepFaction2,MaxStanding1,IsTeamAward1,RewOnKillRepValue1,MaxStanding2,IsTeamAward2,RewOnKillRepValue2,TeamDependent) VALUES
 	 (600681,942,0,4,0,5.0,0,0,0.0,0),
 	 (600682,942,0,4,0,5.0,0,0,0.0,0),
 	 (600683,942,0,7,0,12.0,0,0,0.0,0);
 
+DELETE FROM `creature_equip_template` WHERE `CreatureID` IN (600681,600682,600683,600684,600685,600686,600687,600688);
 INSERT INTO creature_equip_template (CreatureID,ID,ItemID1,ItemID2,ItemID3,VerifiedBuild) VALUES
 	 (600681,1,10614,1984,0,18019),
 	 (600682,1,12328,0,0,18019),
@@ -62,7 +69,8 @@ INSERT INTO creature_equip_template (CreatureID,ID,ItemID1,ItemID2,ItemID3,Verif
 	 (600686,1,5747,0,0,18019),
 	 (600687,1,30208,30209,0,18019),
 	 (600688,1,30208,30209,0,18019);
-
+	 
+DELETE FROM `creature_loot_template` WHERE `Entry` IN (600681,600682,600683,600684,600685,600686,600687,600688);
 INSERT INTO creature_loot_template (Entry,Item,Reference,Chance,QuestRequired,LootMode,GroupId,MinCount,MaxCount,Comment) VALUES
 	 (600681,5760,0,0.3168,0,1,0,1,1,'Coilfang Defender - Eternium Lockbox'),
 	 (600681,17057,0,29.8401,0,1,0,1,1,'Coilfang Defender - Shiny Fish Scales'),
@@ -144,6 +152,7 @@ INSERT INTO creature_loot_template (Entry,Item,Reference,Chance,QuestRequired,Lo
 	 (600688,43949,0,100.0,0,1,0,1,2,'Delve Token');
 
 
+DELETE FROM `creature` WHERE `id1` IN (600681,600682,600683,600684,600685,600686,600687,600688);
 INSERT INTO creature (id1,id2,id3,`map`,zoneId,areaId,spawnMask,phaseMask,equipment_id,position_x,position_y,position_z,orientation,spawntimesecs,wander_distance,currentwaypoint,curhealth,curmana,MovementType,npcflag,unit_flags,dynamicflags,ScriptName,VerifiedBuild,CreateObject,Comment) VALUES
 	 (600681,0,0,1,0,0,1,1,1,9673.97,-210.818,-19.0823,1.02245,1800,10.0,0,306644,0,1,0,0,0,'',NULL,0,NULL),
 	 (600681,0,0,1,0,0,1,1,1,9659.93,-193.108,-20.1536,1.45139,1800,10.0,0,306644,0,1,0,0,0,'',NULL,0,NULL),
@@ -198,6 +207,7 @@ INSERT INTO creature (id1,id2,id3,`map`,zoneId,areaId,spawnMask,phaseMask,equipm
 	 (600688,0,0,1,0,0,1,1,1,9715.95,-13.6397,18.7339,5.28534,1800,0.0,0,673200,0,0,0,0,0,'',NULL,0,NULL);
 
 
+DELETE FROM `smart_scripts` WHERE `entryorguid` IN (600681,600682,600683,600684,600685,600686,600687,600688);
 INSERT INTO smart_scripts (entryorguid,source_type,id,link,event_type,event_phase_mask,event_chance,event_flags,event_param1,event_param2,event_param3,event_param4,event_param5,event_param6,action_type,action_param1,action_param2,action_param3,action_param4,action_param5,action_param6,target_type,target_param1,target_param2,target_param3,target_param4,target_x,target_y,target_z,target_o,comment) VALUES
 	 (600681,0,1,0,0,0,100,0,7300,13350,10900,21850,0,0,11,15655,0,0,0,0,0,2,0,0,0,0,0.0,0.0,0.0,0.0,'Felrage Defender - In Combat - Cast ''Shield Slam'''),
 	 (600681,0,2,0,0,0,100,0,13000,17000,18200,29100,0,0,11,31554,0,0,0,0,0,1,0,0,0,0,0.0,0.0,0.0,0.0,'Felrage Defender - In Combat - Cast ''Spell Reflection'''),
